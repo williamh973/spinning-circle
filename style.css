@@ -1,0 +1,33 @@
+body{
+    background-color: rgba(0, 0, 0, 0.937);
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.cercle{
+height: 10em;
+width: 10em;
+/* border: 1px solid white; */
+border-radius: 50%;
+position: relative;
+animation: animate 0.2s linear infinite;
+}
+
+.cercle::before{
+    content: "";
+    height: 3em;
+    width: 3em;
+    display: flex;
+    border-radius: 50%;
+    background-color: aqua;
+    box-shadow: 0 0 12px 2px aqua;
+}
+
+@keyframes animate {
+    to {
+        transform: rotate(360deg);
+    }
+}
